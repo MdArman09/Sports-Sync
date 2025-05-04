@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Quicksand:wght@300..700&display=swap");
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; 
+  /* background-color: #000; black background */
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  /* background-color: #000;  */
+  background-color: black;
+  color: #e0f7fa; 
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #03a9f4;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 174, 255, 0.99);
+}
+
+.primary-btn button {
+  /* background-image: linear-gradient(90deg, #000428, #004e92); */
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  color: #e0f7fa; 
+  font-size: 1.25rem;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.primary-btn button:hover {
+  background-color: #004e92; 
+  transform: translateY(-2px);
+}
+
+.second-btns button {
+  /* background-color: rgba(50, 50, 50, 0.1); */
+  background-color: black;
+  border: 1px solid #4fc3f7; 
+  border-radius: 5px;
+  color: #e0f7fa;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.second-btns button:hover {
+  /* background-color: rgba(50, 50, 50, 0.3); */
+  background-color: #004e92;
+}
+
+.list-toggle button {
+  background-color: transparent;
+  color: #03a9f4;
+  border: none;
+  font-size: 1rem;
+  padding: 5px 15px;
+  transition: color 0.3s ease;
+}
+
+.list-toggle button.underlined {
+  border-bottom: 2px solid #03a9f4;
+  padding-bottom: 4px;
+}
+
+.list-toggle button:hover {
+  color: #4fc3f7;
+}
+
+.mx-48 {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.border-2 {
+  border-width: 1px;
+  border-color: #4fc3f7; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  border-top: 1px solid #4fc3f7;
+  margin: 1rem 0;
+}
+

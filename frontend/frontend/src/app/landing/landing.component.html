@@ -1,0 +1,57 @@
+<nav class="navbar">
+  <div class="logo">⚽ SportSync</div>
+  <div class="nav-links">
+    <button class="nav-btn" (click)="login()">Login</button>
+    <button class="nav-btn" (click)="signup()">Signup</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Stay Ahead with Real-Time Match Updates</h1>
+    <p>From local leagues to national tournaments, manage and follow events with ease.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Join the SportSync Community</h2>
+  <p>Sign up now and never miss an update on your favorite matches!</p>
+  <div>
+    <button class="cta-btn" (click)="signup()">Get Started</button>
+    <button class="cta-outline-btn" (click)="login()">Already a member? Log In</button>
+  </div>
+</section>
+
+<section class="news">
+  <h2>Trending Sports News</h2>
+  <div class="news-list">
+    <div class="news-card" *ngFor="let news of newsList">
+      <img *ngIf="news.urlToImage" [src]="news.urlToImage" alt="News Image" class="news-img" />
+      <h4>{{ news.title }}</h4>
+      <p>{{ news.description }}</p>
+      <a [href]="news.url" target="_blank">Read more</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <h2>Why Choose SportSync?</h2>
+  <div class="feature-list">
+    <div class="feature-card">
+      <img src="assets/p1.png"/>
+      <h3>Live Match Updates</h3>
+      <p>Get real-time scores, schedules, and stats directly from ongoing matches.</p>
+    </div>
+    <div class="feature-card">
+      <img src="assets/p3.png"/>
+      <h3>Event Management</h3>
+      <p>Create, update, and manage sports events with an intuitive interface.</p>
+    </div>
+    <div class="feature-card">
+      <img src="assets/p2.png"/>
+      <h3>News</h3>
+      <p>Read trending sports related news articles from all over the world.</p>
+    </div>
+  </div>
+</section>

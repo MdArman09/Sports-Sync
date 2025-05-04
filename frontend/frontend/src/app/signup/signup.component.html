@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="logo">⚽ SportSync</div>
+  <button class="home" (click)="goHome()">Home</button>
+</nav>
+<div class="outer-wrapper">
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <form (ngSubmit)="onSignup()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required />
+
+    <button type="submit" class="sng">Sign Up</button>
+  </form>
+
+  <p class="lgn">Already have an account? <button class="login-btn" (click)="goToLogin()">Login</button></p>
+</div>
+</div>

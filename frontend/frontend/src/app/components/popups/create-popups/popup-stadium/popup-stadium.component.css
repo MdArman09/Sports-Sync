@@ -1,0 +1,21 @@
+html {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+form {
+  background-color: #383737;
+}
+
+mat-hint,
+mat-form-field,
+form h1 {
+  color: white;
+}
+
+.form-inputs{
+    margin-top: 10px;
+    display: grid;
+}
+
+
